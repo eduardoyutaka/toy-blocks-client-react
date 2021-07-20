@@ -128,19 +128,13 @@ exports[`<Nodes /> should match snapshot 1`] = `
               className="MuiAccordionDetails-root"
             >
               <div
-                className="MuiBox-root MuiBox-root-20 makeStyles-root-17"
-              >
-                <p
-                  className="MuiTypography-root makeStyles-title-18 MuiTypography-body1"
-                >
-                  001
-                </p>
-                <p
-                  className="MuiTypography-root makeStyles-content-19 MuiTypography-body1"
-                >
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                </p>
-              </div>
+                className="MuiBox-root MuiBox-root-17"
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              />
             </div>
           </div>
         </div>
@@ -173,10 +167,10 @@ exports[`<Nodes /> should match snapshot 1`] = `
         className="MuiAccordionSummary-content makeStyles-content-6"
       >
         <div
-          className="MuiBox-root MuiBox-root-21 makeStyles-summaryContent-4"
+          className="MuiBox-root MuiBox-root-18 makeStyles-summaryContent-4"
         >
           <div
-            className="MuiBox-root MuiBox-root-22"
+            className="MuiBox-root MuiBox-root-19"
           >
             <h5
               className="MuiTypography-root makeStyles-heading-8 MuiTypography-h5"
@@ -190,13 +184,13 @@ exports[`<Nodes /> should match snapshot 1`] = `
             </h6>
           </div>
           <div
-            className="MuiBox-root MuiBox-root-25"
+            className="MuiBox-root MuiBox-root-22"
           >
             <span
-              className="makeStyles-dot-12 makeStyles-dot-23"
+              className="makeStyles-dot-12 makeStyles-dot-20"
             />
             <span
-              className="makeStyles-text-13 makeStyles-text-24"
+              className="makeStyles-text-13 makeStyles-text-21"
             >
               OFFLINE
             </span>
@@ -258,19 +252,13 @@ exports[`<Nodes /> should match snapshot 1`] = `
               className="MuiAccordionDetails-root"
             >
               <div
-                className="MuiBox-root MuiBox-root-26 makeStyles-root-17"
-              >
-                <p
-                  className="MuiTypography-root makeStyles-title-18 MuiTypography-body1"
-                >
-                  001
-                </p>
-                <p
-                  className="MuiTypography-root makeStyles-content-19 MuiTypography-body1"
-                >
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                </p>
-              </div>
+                className="MuiBox-root MuiBox-root-23"
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              />
             </div>
           </div>
         </div>

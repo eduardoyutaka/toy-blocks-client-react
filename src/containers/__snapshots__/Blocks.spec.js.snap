@@ -1,22 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Blcoks /> should match snapshot 1`] = `
+exports[`<Blocks /> should match snapshot 1`] = `
 <div
   class="MuiBox-root MuiBox-root-6"
->
-  <div
-    class="MuiBox-root MuiBox-root-10 makeStyles-root-7"
-  >
-    <p
-      class="MuiTypography-root makeStyles-title-8 MuiTypography-body1"
-    >
-      5
-    </p>
-    <p
-      class="MuiTypography-root makeStyles-content-9 MuiTypography-body1"
-    >
-      The Human Torch
-    </p>
-  </div>
-</div>
+  style="width: 100%;"
+/>
 `;
