@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '2px',
     padding: "8px",
     backgroundColor: "rgba(0, 0, 0, 0.12)",
-    width: "100%",
+    margin: "2px 0"
   },
   title: {
     color: colors.primary,
