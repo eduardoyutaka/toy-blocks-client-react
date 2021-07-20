@@ -5,10 +5,10 @@ import configureStore from './configureStore';
 describe('Store', () => {
   const nodes = {
     list: [
-      { url: 'a.com', online: false, name: null, loading: false },
-      { url: 'b.com', online: false, name: null, loading: false },
-      { url: 'c.com', online: false, name: null, loading: false },
-      { url: 'd.com', online: false, name: null, loading: false }
+      { url: 'a.com', online: false, name: null, loading: false, blocks: { loading: false, list: [] } },
+      { url: 'b.com', online: false, name: null, loading: false, blocks: { loading: false, list: [] } },
+      { url: 'c.com', online: false, name: null, loading: false, blocks: { loading: false, list: [] } },
+      { url: 'd.com', online: false, name: null, loading: false, blocks: { loading: false, list: [] } }
     ]
   };
 
@@ -33,10 +33,10 @@ describe('Store', () => {
     const actual = store.getState();
     const expected = {
       list: [
-        { url: 'a.com', online: true, name: 'theta', loading: false },
-        { url: 'b.com', online: true, name: 'epsilon', loading: false },
-        { url: 'c.com', online: true, name: 'delta', loading: false },
-        { url: 'd.com', online: false, name: null, loading: false }
+        { url: 'a.com', online: true, name: 'theta', loading: false, blocks: { loading: false, list: [] } },
+        { url: 'b.com', online: true, name: 'epsilon', loading: false, blocks: { loading: false, list: [] } },
+        { url: 'c.com', online: true, name: 'delta', loading: false, blocks: { loading: false, list: [] } },
+        { url: 'd.com', online: false, name: null, loading: false, blocks: { loading: false, list: [] } }
       ]
     };
 

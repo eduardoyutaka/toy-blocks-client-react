@@ -23,11 +23,11 @@ const fetchBlocksFailure = (node) => {
   };
 };
 
-export function fetchBlock(node) {
+export function fetchBlocks(node) {
   return async (dispatch) => {
     try {
       dispatch(fetchBlocksStart(node));
-      const res = await fetch(`${node.url}/api/v1/status`);
+      const res = await fetch(`${node.url}/api/v1/blocks`);
 
       if (res.status >= 400) {
         dispatch(fetchBlocksFailure(node));
@@ -42,12 +42,3 @@ export function fetchBlock(node) {
     }
   };
 }
-
-export function fetchBlocks(list) {
-  return (dispatch) => {
-    list.forEach((node) => {
-      dispatch(fetchBlock(node));
-    });
-  };
-}
-

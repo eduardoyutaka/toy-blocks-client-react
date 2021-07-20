@@ -23,20 +23,22 @@ describe("Actions", () => {
       Promise.resolve({
         status: 200,
         json() {
-          return Promise.resolve([
-            {
-              id: "5",
-              type: "blocks",
-              attributes: {
-                index: "1",
-                data: "The Human Torch",
+          return Promise.resolve({
+            data: [
+              {
+                id: "5",
+                type: "blocks",
+                attributes: {
+                  index: "1",
+                  data: "The Human Torch",
+                }
               }
-            }
-          ]);
+            ]
+          });
         },
       })
     );
-    await ActionCreators.fetchBlock(node)(dispatch);
+    await ActionCreators.fetchBlocks(node)(dispatch);
     const expected = [
       {
         type: ActionTypes.FETCH_BLOCKS_START,
@@ -45,16 +47,18 @@ describe("Actions", () => {
       {
         type: ActionTypes.FETCH_BLOCKS_SUCCESS,
         node,
-        res: [
-          {
-            id: "5",
-            type: "blocks",
-            attributes: {
-              index: "1",
-              data: "The Human Torch",
+        res: {
+          data: [
+            {
+              id: "5",
+              type: "blocks",
+              attributes: {
+                index: "1",
+                data: "The Human Torch",
+              }
             }
-          }
-        ],
+          ]
+        },
       },
     ];
 
@@ -67,7 +71,7 @@ describe("Actions", () => {
         status: 400,
       })
     );
-    await ActionCreators.fetchBlock(node)(dispatch);
+    await ActionCreators.fetchBlocks(node)(dispatch);
     const expected = [
       {
         type: ActionTypes.FETCH_BLOCKS_START,

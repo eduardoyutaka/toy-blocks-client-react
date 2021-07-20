@@ -11,13 +11,21 @@ describe('Reducers::Nodes', () => {
   const nodeA = {
     url: 'http://localhost:3002',
     online: false,
-    name: null
+    name: null,
+    blocks: {
+      loading: false,
+      list: []
+    }
   };
 
   const nodeB = {
     url: 'http://localhost:3003',
     online: false,
-    name: null
+    name: null,
+    blocks: {
+      loading: false,
+      list: []
+    }
   };
 
   it('should set initial state by default', () => {
