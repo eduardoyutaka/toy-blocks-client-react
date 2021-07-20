@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actions from "../actions/blocks";
 import Block from "../components/Block";
-import { Box, makeStyles } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 
 export class Blocks extends React.Component {
   componentDidMount() {
