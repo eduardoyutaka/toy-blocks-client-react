@@ -10,6 +10,7 @@ import {
   Box,
 } from "@material-ui/core";
 import colors from "../constants/colors";
+import Block from "./Block";
 import Status from "./Status";
 
 const Node = ({ node, expanded, toggleNodeExpanded }) => {
@@ -46,7 +47,12 @@ const Node = ({ node, expanded, toggleNodeExpanded }) => {
         </Box>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography>Blocks go here</Typography>
+        <Block
+          block={{
+            id: '001',
+            text: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
+          }}
+        />
       </AccordionDetails>
     </Accordion>
   );
