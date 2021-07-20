@@ -50,7 +50,7 @@ const Node = ({ node, expanded, toggleNodeExpanded }) => {
         <Block
           block={{
             id: '001',
-            text: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
+            data: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.'
           }}
         />
       </AccordionDetails>

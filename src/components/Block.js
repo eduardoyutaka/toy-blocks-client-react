@@ -12,7 +12,7 @@ const Block = ({ block }) => {
   return (
     <Box className={classes.root}>
       <Typography className={classes.title}>{block.id}</Typography>
-      <Typography className={classes.content}>{block.text}</Typography>
+      <Typography className={classes.content}>{block.data}</Typography>
     </Box>
   );
 };
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 Block.propTypes = {
   block: PropTypes.shape({
     id: PropTypes.string,
-    text: PropTypes.string,
+    data: PropTypes.string,
   }).isRequired,
 };
 
